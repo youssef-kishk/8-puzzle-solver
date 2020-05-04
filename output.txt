@@ -1,0 +1,6 @@
+Solving algorithm: A* Manhattan
+path_to_goal: [L, R, D, U, R, L, D, R, L, L, L, R, R, D, D, L, R, D, D, U, U, L, U, U, L, R, R, D, R, L, R, L, L, U, R, L, R, D, R, L, D, D, U, U, L]
+cost_of_path: 14
+nodes_expanded: 106
+search_depth: 14
+running_time: 0.145

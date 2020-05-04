@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="mainPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.WelcomePageController">
+   <children>
+      <VBox fx:id="welcomePagePane" alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="317.0" prefWidth="510.0">
+         <children>
+            <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to 8 puzzle game " textAlignment="CENTER" wrappingWidth="492.2548828125">
+               <font>
+                  <Font name="Arial Black" size="32.0" />
+               </font>
+            </Text>
+            <ImageView fx:id="image" fitHeight="100.0" fitWidth="374.0" pickOnBounds="true" preserveRatio="true">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </ImageView>
+            <TextField fx:id="input" alignment="CENTER" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="33.0" prefWidth="324.0" promptText="Enter input in correct format, ex: 1,2,5,3,4,0,6,7,8">
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </TextField>
+            <Text fill="#8d0707" strokeType="OUTSIDE" strokeWidth="0.0" text="CHOOSE THE SOLVING ALGORITHOM" textAlignment="CENTER" wrappingWidth="463.13671875">
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="26.0" />
+               </font>
+            </Text>
+            <HBox fx:id="buttonsPane" alignment="CENTER" prefHeight="37.0" prefWidth="450.0" spacing="30.0">
+               <children>
+                  <Button fx:id="BFS" mnemonicParsing="false" onAction="#buttonAction" onMousePressed="#BFSButtonPressed" prefHeight="39.0" prefWidth="88.0" text="BFS">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <effect>
+                        <InnerShadow />
+                     </effect>
+                  </Button>
+                  <Button fx:id="DFS" mnemonicParsing="false" onAction="#buttonAction" onMousePressed="#DFSButtonPressed" prefHeight="39.0" prefWidth="88.0" text="DFS">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <effect>
+                        <InnerShadow />
+                     </effect>
+                  </Button>
+                  <Button fx:id="ASTARManh" mnemonicParsing="false" onAction="#buttonAction" onMousePressed="#AstarManhButtonPressed" prefHeight="39.0" prefWidth="88.0" text=" A* Manh">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <effect>
+                        <InnerShadow />
+                     </effect>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="ASTAREucli" layoutX="326.0" layoutY="10.0" mnemonicParsing="false" onAction="#buttonAction" onMousePressed="#AstarEuclideanButtonPressed" prefHeight="39.0" prefWidth="88.0" text=" A* Eucli">
+                     <effect>
+                        <InnerShadow />
+                     </effect>
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets top="7.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+         <padding>
+            <Insets left="20.0" right="20.0" top="10.0" />
+         </padding>
+      </VBox>
+   </children>
+</Pane>
